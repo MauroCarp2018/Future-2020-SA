@@ -158,7 +158,7 @@ header{
 }
 
 .contenedor-servicio img{
-    width: 40%;
+    width: 50%;
 }
 
 .checklist-servicio{
@@ -166,11 +166,58 @@ header{
 }
 
 .service{
+    text-align: justify;
     margin-bottom: 20px;
 }
 
-.parrafo-service {
+.container-service img {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 80%;
+}
+
+.parrafo-service-original {
     text-align: justify;
+}
+
+.parrafo-service-extra {
+    display: none;
+}
+
+p {
+    display: inline;
+}
+
+input[type="checkbox"] {
+    height: 2em;
+    display: block;
+    appearance: none;
+}
+
+label {
+    position: relative;
+    padding: 10px;
+    font-weight: bolder;
+    background-color:#9f8ad0;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label::before {
+    content: 'Leer Más';
+}
+
+input[type="checkbox"]:checked ~ label::before {
+    content: 'Leer Menos';
+}
+
+.dots:has(~ input[type="checkbox"]:checked ) {
+    display: none;
+}
+
+.parrafo-service-extra:has(~ input[type="checkbox"]:checked ) {
+    display: inline;
 }
 
 .n-service{
