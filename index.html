@@ -61,7 +61,7 @@
                 </div>
             <h2 class="subtitulo">Servicios Ofrecidos</h2>
             <div class="contenedor-servicio">
-                <img src="img/checklist.svg" alt="checklist">
+                <img src="img/checklist.jpg" alt="checklist">
                 <div class="checklist-servicio">
                     <div class="service">
                         <h3 class="n-service"><span class="number">1</span>Auditoría</h3>
@@ -125,24 +125,29 @@
             <h2 class="titulo-main">Trabajos y Clientes:</h2>
             <section class="experts">
                 <div class="cont-expert">
-                    <img src="img/construccion.svg" alt="grafico torta">
+                    <img src="img/obras.jpg" alt="obra">
                     <h3 class="n-expert">Nuestras Obras:</h3>
-                    <p class="parrafo">
+                    <div class="container-expert">
+                    <p class="original">
                         <h3 class="n-service"><span class="number">1</span>AYSA</h3>
-                      -Montaje eléctrico estación de bombeo de líquidos cloacales en el partido de Quilmes, denominado Quilmes Sur. Potencia 200kW.
-                      <br> <h3 class="n-service"><span class="number">2</span>ABSA</h3>
-                       -Montaje eléctrico planta de bombeo de agua potable en el partido de Moreno, Pcia. De Bs.As.,potencia 100kW.
-                       <br> 
-                       -Automatización para la puesta en paralelo de generadores de 500kVA de la planta de bombeo de agua potable de ABSA, Partido de la Costa.
-                       <br><h3 class="n-service"><span class="number">3</span>UBA</h3>
+                        -Montaje eléctrico estación de bombeo de líquidos cloacales en el partido de Quilmes, denominado Quilmes Sur. Potencia 200kW.
+                        <br> <h3 class="n-service"><span class="number">2</span>ABSA</h3>
+                        -Montaje eléctrico planta de bombeo de agua potable en el partido de Moreno, Pcia. De Bs.As.,potencia 100kW.
+                        <br> 
+                        -Automatización para la puesta en paralelo de generadores de 500kVA de la planta de bombeo de agua potable de ABSA, Partido de la Costa.
+                        <br><h3 class="n-service"><span class="number">3</span>UBA</h3>
                         -Montaje eléctrico del sistema de climatización central del Bioterio.
                         <br>
                         -Montaje eléctrico e instrumentos del sistema de climatización del Bioterio.
                         <br> <h3 class="n-service"><span class="number">4</span>Río Reconquista</h3>
                         -Montaje eléctrico planta de bombeo Sistema hidráulico Rio Reconquista, San Fernando.1250kW.
-                        <br> <h3 class="n-service"><span class="number">5</span>ABSA</h3>
+                        <br><h3 class="n-service"><span class="number">5</span>ABSA</h3>
                         -Repotenciación planta de bombeo cloacal en Villa Gessell. 250kW.
-                        <br> <h3 class="n-service"><span class="number">6</span>NUTRISUR</h3>
+                        <button class="button" id="btn_ver_mas">...Ver más</button>
+                        </p>
+
+                        <span class="ocultar" id="span_text">
+                            <br> <h3 class="n-service"><span class="number">6</span>NUTRISUR</h3>
                         -Ingeniería básica y de Detalle de alimentación principal a la planta en baja tensión, Sistema de corrección de factor de potencia, Ingeniería de detalle y Construcción de tableros de sistema extrusado y molino de alimentos balaceados para animales.
                         <br>
                         -Montaje mecánico alternadores del sistema de generación de emergencia, Samborombon.
@@ -155,9 +160,14 @@
                         <br> <h3 class="n-service"><span class="number">10</span>CAJA DE MÉDICOS</h3>
                         -Montaje eléctrico e instrumental para climatización y agua caliente salitaria del hotel de la Caja de Médicos de la Pcia. De Buenos Aires, en la ciudad de La Plata.
                         </p>
+                        <button class="button" id="btn_ver_menos">Ver menos</button>
+                        </span>
+                        
+                    </div>                        
+                    </div>
                 </div>
                 <div class="cont-expert">
-                    <img src="img/trato.svg" alt="clientes">
+                    <img src="img/clientes.jpg" alt="clientes">
                     <h3 class="n-expert">Nuestros Clientes:</h3>
                     <p class="parrafo">
                         <h3 class="n-service"><span class="number">1</span>ELEPRINT</h3>
@@ -247,6 +257,7 @@
         </div>
     </div>
 
+    <script src="js/button.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/gotop.js"></script>
     <script src="js/lightbox.js"></script>
