@@ -161,6 +161,7 @@ header{
     width: 40%;
     height: 60vh;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    border: #9f8ad0 solid;
     border-radius: 10px;
 }
 
@@ -357,6 +358,8 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 .cont-expert h3 {
+    color: #9f8ad0;
+    margin-bottom: 15px;
     text-align: center;
 }
 
