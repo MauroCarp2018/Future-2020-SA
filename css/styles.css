@@ -83,6 +83,10 @@ header{
     margin-bottom: 15px;
 }
 
+.blur-out-expand{-webkit-animation:blur-out-expand 2s cubic-bezier(.215,.61,.355,1.000) 3s reverse forwards;animation:blur-out-expand 2s cubic-bezier(.215,.61,.355,1.000) 3s reverse forwards}
+
+@-webkit-keyframes blur-out-expand{0%{-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:1em;-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}@keyframes blur-out-expand{0%{-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:1em;-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}
+
 .copy{
     font-weight: 300;
     font-size: 25px;
