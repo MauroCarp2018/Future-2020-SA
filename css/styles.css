@@ -22,7 +22,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 60%), url(../img/Logo\ caratula.jpg);
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 60%), url(../img/LOGO.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -74,6 +74,7 @@ header{
 }
 
 .menu-navegacion a{
+    flex-wrap: wrap;
     color: #fff;
     text-decoration: none;
 }
@@ -88,7 +89,7 @@ header{
 @-webkit-keyframes blur-out-expand{0%{-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:1em;-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}@keyframes blur-out-expand{0%{-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:1em;-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}
 
 .copy{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 25px;
 }
 
@@ -145,6 +146,7 @@ header{
 }
 
 .card .parrafo {
+    text-align: justify;
     line-height: 1.5;
     color: #6a6a6a;
 }
@@ -170,7 +172,9 @@ header{
 }
 
 .checklist-servicio{
+    font-family: "Open Sans", sans-serif;
     width: 45%;
+    color: #6a6a6a;
 }
 
 .service{
@@ -328,6 +332,8 @@ input[type="checkbox"]:checked ~ label::before {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    color: #6a6a6a;
+    font-family: "Open Sans", sans-serif;
 }
 
 .button {
@@ -361,7 +367,7 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 .cont-expert {
-    text-align: justify;
+    text-align: center;
 }
 
 .n-service {
@@ -426,7 +432,6 @@ footer {
 
 .columna-1 {
     max-width: 400px;
-    align-items: center;
 }
 
 .columna-1 h1 {
@@ -436,12 +441,13 @@ footer {
 }
 
 .columna-1 p {
+    text-align: justify;
     font-size: 14px;
     color: #c7c7c7;
-    margin-top: 20px;
 }
 
 .columna-1 iframe {
+    align-items: center;
     max-width: 100%;
     padding: 20px 20px;
     border-radius: 20%;
@@ -514,10 +520,6 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-}
-
-.parrafo-footer {
-    text-align: justify;
 }
 
 .copyright {
@@ -596,7 +598,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
+    .hamburguer{
+        margin-right: 20px;
+    }
+
     .container-body {
         flex-wrap: wrap;
     }
@@ -612,8 +618,13 @@ footer {
 
 
 @media screen and (max-width:800px){
+
+    .hamburguer{
+        margin-right: 20px;
+    }
+
     .menu-navegacion{
-        width: 50vw;
+        width: 35vw;
     }
 
     .container {
@@ -681,8 +692,13 @@ footer {
 }
 
 @media screen and (max-width:500px) {
+
+    .hamburguer{
+        margin-right: 20px;
+    }
+    
     .menu-navegacion{
-        width: 65vw;
+        width: 50vw;
     }
 
     .hamburguer{
